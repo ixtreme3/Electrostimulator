@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="success_toast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">15sp</item>
+        <item name="stColorBackground">@color/fancy_green</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stIconStart">@drawable/ic_success</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="error_toast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">15sp</item>
+        <item name="stColorBackground">@color/fancy_red</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stIconStart">@drawable/ic_error</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="green_toast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">15sp</item>
+        <item name="stColorBackground">@color/fancy_green</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="red_toast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">15sp</item>
+        <item name="stColorBackground">@color/fancy_red</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stLength">SHORT</item>
+        <item name="stGravity">center</item>
+        <item name="stRadius">20dp</item>
+    </style>
+
+    <style name="MyTransparentSnackbar" parent="Widget.Design.Snackbar">
+        <item name="android:background">@drawable/background_snakbar</item>
+    </style>
+
+    <style name="MySnackbarText" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
