@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">НоваТекс Электростимулятор</string>
+    <string name="app_name">Electrostimulator</string>
     <string name="unnamed_device">Безымянное устройство</string>
-    <string name="name">Электростимулятор \nНоваТекс</string>
+    <string name="name">Электростимулятор</string>
     <string name="label_exploration_mode">Исследовательский \nрежим</string>
     <string name="frequency">Частота, Гц</string>
     <string name="duration">Длительность, МКС</string>
@@ -14,4 +14,6 @@
     <string name="frequency_arrow_down">Кнопка уменьшения частоты на 1</string>
     <string name="bluetooth_device_icon">Иконка Bluetooth устройства</string>
     <string name="search_button">Кнопка поиска устройств</string>
+    <string name="_0">0</string>
+    <string name="app_icon">App icon</string>
 </resources>

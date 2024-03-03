@@ -18,15 +18,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/appName"
+    <ImageView
+        android:id="@+id/appIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/app_icon"
         app:layout_constraintBottom_toBottomOf="@+id/backButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,9 +37,9 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="32dp"
         android:background="@drawable/background_red_dot"
-        app:layout_constraintBottom_toBottomOf="@+id/appName"
+        app:layout_constraintBottom_toBottomOf="@+id/appIcon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appName" />
+        app:layout_constraintTop_toTopOf="@+id/appIcon" />
 
     <TextView
         android:id="@+id/frequency"
@@ -53,14 +50,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/duration"
         app:layout_constraintStart_toStartOf="@+id/duration"
-        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:layout_constraintTop_toBottomOf="@+id/appIcon"
         app:layout_constraintVertical_chainStyle="packed" />
-
 
     <EditText
         android:id="@+id/frequencyValue"
         android:layout_width="72dp"
         android:layout_height="wrap_content"
+        android:hint="@string/_0"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -74,29 +72,31 @@
         android:id="@+id/frequencyArrowUp"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:contentDescription="@string/frequency_arrow_up"
         android:src="@drawable/ic_up_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/barrier1"
         app:layout_constraintEnd_toEndOf="@+id/frequencyArrowDown"
         app:layout_constraintStart_toStartOf="@+id/frequencyArrowDown"
-        app:layout_constraintTop_toTopOf="@+id/barrier1"
-        android:contentDescription="@string/frequency_arrow_up" />
+        app:layout_constraintTop_toTopOf="@+id/barrier1" />
 
     <ImageView
         android:id="@+id/durationArrowDown"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:contentDescription="@string/duration_arrow_down"
         android:src="@drawable/ic_down_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/barrier4"
         app:layout_constraintEnd_toEndOf="@+id/durationArrowUp"
         app:layout_constraintStart_toStartOf="@+id/durationArrowUp"
-        app:layout_constraintTop_toTopOf="@+id/barrier4"
-        android:contentDescription="@string/duration_arrow_down" />
+        app:layout_constraintTop_toTopOf="@+id/barrier4" />
 
     <EditText
         android:id="@+id/durationValue"
         android:layout_width="72dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:hint="@string/_0"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -127,25 +127,25 @@
         android:id="@+id/durationArrowUp"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:contentDescription="@string/duration_arrow_up"
         android:src="@drawable/ic_up_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/barrier3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/durationValue"
-        app:layout_constraintTop_toTopOf="@+id/barrier3"
-        android:contentDescription="@string/duration_arrow_up" />
+        app:layout_constraintTop_toTopOf="@+id/barrier3" />
 
     <ImageView
         android:id="@+id/frequencyArrowDown"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:contentDescription="@string/frequency_arrow_down"
         android:src="@drawable/ic_down_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/barrier2"
         app:layout_constraintEnd_toEndOf="@+id/durationArrowUp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/durationArrowUp"
-        app:layout_constraintTop_toTopOf="@+id/barrier2"
-        android:contentDescription="@string/frequency_arrow_down" />
+        app:layout_constraintTop_toTopOf="@+id/barrier2" />
 
     <TextView
         android:id="@+id/mode"
@@ -163,12 +163,12 @@
         android:id="@+id/modeSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:thumbTint="@color/black"
-        app:trackTint="@color/switch_track_color"
         app:layout_constraintBottom_toBottomOf="@+id/mode"
         app:layout_constraintEnd_toEndOf="@+id/durationArrowDown"
         app:layout_constraintStart_toStartOf="@+id/durationArrowDown"
-        app:layout_constraintTop_toTopOf="@+id/mode" />
+        app:layout_constraintTop_toTopOf="@+id/mode"
+        app:thumbTint="@color/black"
+        app:trackTint="@color/switch_track_color" />
 
     <Button
         android:id="@+id/resetButton"
